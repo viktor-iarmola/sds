@@ -53,7 +53,7 @@ install-lib: $(LIB_TARGETS)
 	$(INSTALL_DIR) $(DESTDIR)$(libdir)
 	$(INSTALL_PROGRAM) $(LIB_SHLIBNAME) $(DESTDIR)$(libdir)
 	$(LN) $(LIB_SHLIBNAME) $(DESTDIR)$(libdir)/$(LIB_SHSONAME)
-	$(LN) $(LIB_SHSONAME) $(DESTDIR)$(libdir)$(LIB_SHBASENAME)
+	$(LN) $(LIB_SHSONAME) $(DESTDIR)$(libdir)/$(LIB_SHBASENAME)
 
 uninstall-lib:
 	$(RM) $(DESTDIR)$(libdir)/$(LIB_SHLIBNAME)
